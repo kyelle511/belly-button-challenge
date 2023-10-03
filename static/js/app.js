@@ -104,27 +104,27 @@ function init() {
     });   
 }
 
-//On change to the DOM, call getData()
-d3.selectAll("#selDataset").on("change", getData);
+// //On change to the DOM, call getData()
+// d3.selectAll("#selDataset").on("change", getData);
 
-// // Function called by DOM changes, thank you to TA Randy Sendek for helping me talk through and figure out how to set up this section to work with a different drop down
-function getData() {
-    let dropdownMenu = d3.select("#selDataset");
-    //Assign the value of the dropdown menu option to a letiable (class example)
-    let dataset = dropdownMenu.property("value");
-    //Initialize an empty array for the country's data (class example)
-    let data = [];
+// // // Function called by DOM changes, thank you to TA Randy Sendek for helping me talk through and figure out how to set up this section to work with a different drop down
+// function getData() {
+//     let dropdownMenu = d3.select("#selDataset");
+//     //Assign the value of the dropdown menu option to a letiable (class example)
+//     let dataset = dropdownMenu.property("value");
+//     //Initialize an empty array for the country's data (class example)
+//     let data = [];
 
-    data = number(dataset)
+//     data = number(dataset)
 
-    //Call function to udpate the chart
-    updatePlotly(data);
-}
+//     //Call function to udpate the chart
+//     updatePlotly(data);
+// }
 
-//Update the restyled plot's values
-// function updatePlotly(newdata) {
-    Plotly.restyle("bubble", [newdata])
-    Plotly.restyle("bar", [newdata])
-}
+// //Update the restyled plot's values
+// // function updatePlotly(newdata) {
+//     Plotly.restyle("bubble", [newdata])
+//     Plotly.restyle("bar", [newdata])
+// }
 
 init();
