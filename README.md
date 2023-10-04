@@ -1,5 +1,5 @@
 # belly-button-challenge
-Module 14 Challenge - Interactive Visuatlizations & JavaScript
+Module 14 Challenge - Interactive Visuatlizations & JavaScript <br>
 Contributor: Katy Yelle
 
 Context<br>
