@@ -1,8 +1,9 @@
 # belly-button-challenge
-Module 14 Challenge - Interactive Visuatlizations & JavaScript
+Module 14 Challenge - Interactive Visuatlizations & JavaScript <br>
+
 Contributor: Katy Yelle
 
-Context
+Context<br>
 An interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs the microbes that colonize human navels.
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare. 
@@ -57,7 +58,7 @@ https://kyelle511.github.io/belly-button-challenge/
 ### Future Work
 This project is not in its final state. I plan to continue to work and modify it specifically with the following goals in mind:
 - Create the different charts and elements using a function and then calling those functions in for the initial display function.
-- Add functionality so that when a different 'Test Subject ID No' is selected from the drop down the dispalys update for the new datasets.
+- Add functionality so that when a different 'Test Subject ID No' is selected from the drop down the displays update for the new datasets.
 - Modify the color scheme for the bubble chart.
 - Adjust the features for the 'Belly Button Washing Frequency' gauge. 
 
