@@ -35,16 +35,26 @@ function init() {
 
         //Confirm metadata
         console.log(sampleMetadata[0]);
+        
+        //Create the key value pairs for the metadata
+        //https://stackoverflow.com/questions/37673454/javascript-iterate-key-value-from-json
+        let entries = Object.entries(sampleMetadata[0]);
+        
+        for (let [key,value] of entries) {
+            panelMetadata
+            .append("H6")    
+            .text(`${key} : ${value}`)
+        };
 
-        //Loop through to get each sample name (id) and append to the dropdown options
-        for (let i = 0; i < sampleMetadata[0].length; i++){
-        panelMetadata
-            .append("<H6>")
-            .text(sampleNames[i])
-            
-    };
-        panelMetadata
-            .text(JSON.stringify(sampleMetadata[0]));
+        console.log(sampleMetadata[0].wfreq)
+        let gauge =[{
+            type: "indicator",
+            value: sampleMetadata[0].wfreq,
+            title: {text: "Belly Button Washing Frequency"},
+            mode: "gauge"
+        }];
+        //Plot the gauge
+        Plotly.newPlot("gauge", gauge);
     });
 
     //Get the sample data for bubble chart
