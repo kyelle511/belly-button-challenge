@@ -45,8 +45,10 @@ function init() {
             .append("H6")    
             .text(`${key} : ${value}`)
         };
-
+        //Check to see if the data section works for the gauge
         console.log(sampleMetadata[0].wfreq)
+
+        //Create the gauge chart
         let gauge =[{
             type: "indicator",
             value: sampleMetadata[0].wfreq,
@@ -114,6 +116,8 @@ function init() {
     });   
 }
 
+init();
+//Sections as placeholders for future work direction
 // //On change to the DOM, call getData()
 // d3.selectAll("#selDataset").on("change", getData);
 
@@ -137,4 +141,3 @@ function init() {
 //     Plotly.restyle("bar", [newdata])
 // }
 
-init();

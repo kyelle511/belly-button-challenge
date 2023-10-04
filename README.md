@@ -50,6 +50,10 @@ The next section pulls a different piece of the data set to create a bubble char
 The final section sorts the sample data, and then displays the top ten OTUs found in that individual as a horizontal bar chart. The specific OTU labels display as hovertext for each bar.
 ![Bar Chart](/images/barchart.png "Bar Chart")
 
+The app is deployed to GitHub Pages and can be accessed here:
+https://kyelle511.github.io/belly-button-challenge/
+
+
 ### Future Work
 This project is not in its final state. I plan to continue to work and modify it specifically with the following goals in mind:
 - Create the different charts and elements using a function and then calling those functions in for the initial display function.
