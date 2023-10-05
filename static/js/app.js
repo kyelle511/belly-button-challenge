@@ -117,7 +117,8 @@ function init() {
 }
 
 init();
-//Sections as placeholders for future work direction
+
+//Sections as placeholders for future work direction (aka work in progress)
 // //On change to the DOM, call getData()
 // d3.selectAll("#selDataset").on("change", getData);
 
